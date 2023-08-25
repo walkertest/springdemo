@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationListener=\
+  com.tencent.demo.listener.TestStartingListener,com.tencent.demo.listener.SdkStartingListener
