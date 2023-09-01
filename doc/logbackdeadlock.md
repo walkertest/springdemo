@@ -1,4 +1,16 @@
 # how to reproduce the deadlock
+* I make a demo to reproduce the problem.
+* problem: the spring project may be deadlocked by log info format message and the projcet start failed. This happened online.
+* detailInfo: https://github.com/walkertest/springdemo/blob/main/doc/logbackdeadlock.md
+
+# some env 
+```
+java.version: 1.8.0_361
+springboot: 2.7.15
+aspectjweaver: 1.9.20
+```
+
+# the steps to reproduce the deadlock
 * add a debugpoint
 ![debugpoint](debugpoint.png)
 * start the application in debug mode
