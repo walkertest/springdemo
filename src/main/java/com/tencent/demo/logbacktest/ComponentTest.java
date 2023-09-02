@@ -4,10 +4,10 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 @Aspect
-@Configuration
+@Component
 public class ComponentTest {
 
     private static Logger logger = LoggerFactory.getLogger(ComponentTest.class);
