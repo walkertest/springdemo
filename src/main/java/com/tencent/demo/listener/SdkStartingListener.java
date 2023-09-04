@@ -20,6 +20,7 @@ public class SdkStartingListener implements ApplicationListener<ApplicationStart
     @Override
     public void onApplicationEvent(ApplicationStartingEvent event) {
         try {
+            System.out.println("SdkStartingListener on ApplicationStartingEvent.....");
             String START_STR = "file:";
             String END_STR = "!/";
             CodeSource codeSource = Agent.class.getProtectionDomain().getCodeSource();
